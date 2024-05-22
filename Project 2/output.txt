@@ -1,0 +1,65 @@
+Query 1 output:
+(1001, 'ASP.NET UNLEASHED', 4, 'ASP', datetime.date(2002, 4, 2), 'HARD COVER', 540)
+(1002, 'ORACLE10G COMP. REF.', 3, 'ORA', datetime.date(2005, 5, 1), 'PAPER BACK', 575)
+(1003, 'MASTERING EJB', 1, 'JEE', datetime.date(2005, 2, 3), 'PAPER BACK', 475)
+(1004, 'JAVA COMP. REF', 3, 'JAVA', datetime.date(2005, 4, 3), 'PAPER BACK', 499)
+(1005, 'PRO. VB.NET', 2, 'VB', datetime.date(2005, 6, 15), 'HARD COVER', 450)
+(1006, 'INTRO. VB.NET', 2, 'VB', datetime.date(2002, 12, 2), 'PAPER BACK', 425)
+
+Query 2 output:
+Table 'customer' created. Since there is nothing inside the table yet, I will just print column names below to verify.
+custID
+custName
+zip
+city
+state
+
+
+Query 3 output:
+Customers have been added to 'customer' table. This table is shown below:
+(1, 'ABRAHAM SILBERSCHATZ', None, None, None)
+(2, 'HENRY KORTH', None, None, None)
+(3, 'CALVIN HARRIS', None, None, None)
+(4, 'MARTIN GARRIX', None, None, None)
+(5, 'JAMES GOODWILL', None, None, None)
+
+
+Query 4 output:
+(2, 2)
+(3, 2)
+(1, 1)
+(4, 1)
+
+Query 5 output: 
+(103, 'DAVAID HUNTER', Decimal('949'))
+(105, 'KEVIN LONEY', Decimal('575'))
+(104, 'STEPHEN WALTHER', Decimal('540'))
+(106, 'ED. ROMANS', Decimal('475'))
+(102, 'JAMES GOODWILL', Decimal('450'))
+
+Query 6 output: 
+('PRO. VB.NET',)
+
+Query 7 output: 
+('WILLEY',)
+('TATA MCGRAW-HILL',)
+('WROX',)
+
+Query 8 output: 
+('ED. ROMANS',)
+
+Query 9 output: 
+('WROX',)
+('TATA MCGRAW-HILL',)
+('TECHMEDIA',)
+
+Query 10 output: 
+Prices have been updated. Below is the new table values: 
+(1001, 'ASP.NET UNLEASHED', 4, 'ASP', datetime.date(2002, 4, 2), 'HARD COVER', 513)
+(1002, 'ORACLE10G COMP. REF.', 3, 'ORA', datetime.date(2005, 5, 1), 'PAPER BACK', 661)
+(1003, 'MASTERING EJB', 1, 'JEE', datetime.date(2005, 2, 3), 'PAPER BACK', 546)
+(1004, 'JAVA COMP. REF', 3, 'JAVA', datetime.date(2005, 4, 3), 'PAPER BACK', 574)
+(1005, 'PRO. VB.NET', 2, 'VB', datetime.date(2005, 6, 15), 'HARD COVER', 518)
+(1006, 'INTRO. VB.NET', 2, 'VB', datetime.date(2002, 12, 2), 'PAPER BACK', 404)
+
+MySQL connection is closed
