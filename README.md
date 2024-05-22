@@ -13,7 +13,7 @@ If you'd like to try this out yourself, the installer for MySQL Workbench can be
 If you are trying this yourself, very briefly the flow would be as such: install and configure MySQL Workbench, within Workbench create a schema, within this schema create the tables with their attributes, import data into each table, run queries to find desired data, and finally export results onto CSV. 
 # Project 2
 In this second project, the goal was to create a single python program that would connect to my database, create tables, insert data, and execute queries. The only interaction with MySQL workbench this time was to create the main schema 'project2'. Although this was somewhat tedious, I found this project really enjoyable as I learned a lot about working with python. Below are the files from my project:
-- 📋 [databases_projec2_instructions](https://github.com/espdieg/databases_course/blob/main/Project%202/databases_project2_instructions.docx) - Contains the instructions provided. Disclaimer: I do not own these. 
+- 📋 [databases_project2_instructions](https://github.com/espdieg/databases_course/blob/main/Project%202/databases_project2_instructions.docx) - Contains the instructions provided. Disclaimer: I do not own these. 
 - [output](https://github.com/espdieg/databases_course/blob/main/Project%202/output.txt) - Contains the output of my python program as you would see on the console.
 - [project2](https://github.com/espdieg/databases_course/blob/main/Project%202/project2.py) - This is my python program that connects to my database, creates tables, inserts data, and executes queries. You'll have to take my word when I say my password is not just 'password' 😅. 
 
