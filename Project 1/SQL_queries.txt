@@ -1,0 +1,73 @@
+Query 1:
+
+select hobby as "Hobbies", count(email) as 'Users with this hobby'
+from hobby
+group by hobby
+
+Query 2:
+
+select name, address
+from celebrity c, user u
+where c.email = u.email 
+and kind != "MovieStar"
+
+Query 3:
+
+select name as 'Vendor', count(content) as 'Number of ads'
+from vendor v, advertisement a 
+where v.id = a.vendorid
+group by name
+order by count(content) DESC
+
+Query 4:
+
+select u.email, password, name, date_of_birth, kind
+from follow f, celebrity c, user u
+where c.email = f.follower and kind = 'MovieStar' and u.email = c.email
+group by follower
+
+Query 5:
+
+select name, email, count(follower) as followers
+from follow f, user u
+where f.followee = u.email 
+group by followee
+having followers > 55
+order by followers desc
+
+Query 6:
+
+select f.follower as A, f.followee as B
+from follow f 
+where not exists (
+	select 1
+    from blurt_analysis a, blurt_analysis b
+    where a.topicid != b.topicid
+    and a.email = f.follower
+    and b.email = f.followee
+    )
+
+Query 7:
+
+select location, count(blurtid) as blurtCount
+from blurt
+group by location
+having count(blurtid) > 40
+order by blurtCount desc
+
+Query 8:
+
+select v.name as vendor, va.email as ambassadorEmail, u.name as ambassadorName, count(f.follower) as following
+from vendor v
+inner join vendor_ambassador va on v.id = va.vendorid
+inner join user u on va.email = u.email
+inner join follow f on f.follower = u.email
+group by v.name, va.email
+order by following desc
+
+Query 9:
+
+select v.id as vendorID, v.name as vendorName, va.email as ambassadorEmail, count(va.email) as usersShown
+from vendor v, vendor_ambassador va, user_ad ua, advertisement a 
+where v.id = va.vendorid and ua.adid = a.id and v.id = a.vendorid
+group by v.id, va.email
